@@ -5,7 +5,7 @@ export const DEFAULT_CURRENCY_CODE = 'USD'
 // Document types which:
 // - cannot be created in the 'new document' menu
 // - cannot be duplicated, unpublished or deleted
-export const LOCKED_DOCUMENT_TYPES = ['settings', 'home', 'media.tag']
+export const LOCKED_DOCUMENT_TYPES = ['media.tag']
 
 // Document types which:
 // - cannot be created in the 'new document' menu
@@ -16,7 +16,6 @@ export const SHOPIFY_DOCUMENT_TYPES = ['product', 'productVariant', 'collection'
 // References to include in 'internal' links
 export const PAGE_REFERENCES = [
   {type: 'collection'},
-  {type: 'home'},
   {type: 'page'},
   {type: 'product'},
 ]
