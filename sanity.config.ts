@@ -22,8 +22,7 @@ export default defineConfig({
   dataset: 'production',
 
   plugins: [
-    deskTool({ defaultDocumentNode }),
-    deskTool({structure}),
+    deskTool({ defaultDocumentNode, structure }),
     colorInput(),
     imageHotspotArrayPlugin(),
     customDocumentActions(),
