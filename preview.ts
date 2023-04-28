@@ -30,7 +30,7 @@ export const defaultDocumentNode: DefaultDocumentNodeResolver = (S, {schemaType}
                 // @ts-ignore
                 const slug =  doc.slug.current;
                 if(slug === "home-page") return `http://localhost:3000/`
-                if(doc.template === "campaign") return `http://localhost:3000/campaigns/${slug}`
+                if(doc.template === "campaign") return `http://localhost:3000/campaigns/preview/${slug}`
               }
             }
           })
