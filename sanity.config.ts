@@ -9,6 +9,8 @@ import {colorInput} from '@sanity/color-input'
 import {imageHotspotArrayPlugin} from 'sanity-plugin-hotspot-array'
 import {media, mediaAssetSource} from 'sanity-plugin-media'
 import {customDocumentActions} from './plugins/customDocumentActions'
+import { defaultDocumentNode } from './preview'
+
 
 const devOnlyPlugins = [visionTool()]
 
@@ -20,6 +22,7 @@ export default defineConfig({
   dataset: 'production',
 
   plugins: [
+    deskTool({ defaultDocumentNode }),
     deskTool({structure}),
     colorInput(),
     imageHotspotArrayPlugin(),
