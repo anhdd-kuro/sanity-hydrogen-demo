@@ -58,6 +58,9 @@ import shopifyProduct from './objects/shopifyProduct'
 import shopifyProductVariant from './objects/shopifyProductVariant'
 import navigation from './navigation'
 import navigationItem from './navigation/item'
+import banner from './banner'
+import templateCampaign from "./pageTemplates/campaign"
+import templateBasic from "./pageTemplates/basic"
 
 const objects = [
   customProductOptionColor,
@@ -93,6 +96,9 @@ const objects = [
   // Navigation
   navigationItem,
   navigation,
+  banner,
+  templateCampaign,
+  templateBasic
 ]
 
 export const schemaTypes = [...annotations, ...documents, ...objects, ...blocks]
