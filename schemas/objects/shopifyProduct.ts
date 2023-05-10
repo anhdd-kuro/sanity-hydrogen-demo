@@ -147,33 +147,5 @@ export default defineField({
       type: 'string',
       description: 'Image displayed in both cart and checkout',
     }),
-    // Options
-    defineField({
-      name: 'options',
-      title: 'Options',
-      type: 'array',
-      of: [
-        {
-          name: 'option',
-          title: 'Option',
-          type: 'productOption',
-        },
-      ],
-    }),
-    // Variants
-    defineField({
-      fieldset: 'variants',
-      name: 'variants',
-      title: 'Variants',
-      type: 'array',
-      of: [
-        {
-          title: 'Variant',
-          type: 'reference',
-          weak: true,
-          to: [{type: 'productVariant'}],
-        },
-      ],
-    }),
   ],
 })
