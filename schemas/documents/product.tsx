@@ -100,16 +100,13 @@ export default defineType({
       priceRange: 'store.priceRange',
       status: 'store.status',
       title: 'store.title',
-      variants: 'store.variants',
     },
     prepare(selection) {
-      const {isDeleted, options, previewImageUrl, priceRange, status, title, variants} = selection
+      const {isDeleted, options, previewImageUrl, priceRange, status, title} = selection
 
       const optionCount = options?.length
-      const variantCount = variants?.length
 
       let description = [
-        variantCount ? pluralize('variant', variantCount, true) : 'No variants',
         optionCount ? pluralize('option', optionCount, true) : 'No options',
       ]
 

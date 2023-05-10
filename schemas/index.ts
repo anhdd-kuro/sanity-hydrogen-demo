@@ -20,6 +20,7 @@ import templateCampaign from "./pageTemplates/campaign"
 import templateBasic from "./pageTemplates/basic"
 import proxyString from './objects/proxyString'
 import placeholderString from './objects/placeholderString'
+import productVariant from './objects/productVariant'
 
 const objects = [
   linkExternal,
@@ -31,6 +32,7 @@ const objects = [
   shopifyProductVariant,
   proxyString,
   placeholderString,
+  productVariant,
   // Navigation
   navigationItem,
   navigation,
